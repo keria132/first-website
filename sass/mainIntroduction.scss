@@ -1,0 +1,88 @@
+$darkerBlue: #11749e;
+$lightBlue: #3c8daf;
+
+
+section.mainIntroduction{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: $darkerBlue;
+    // height: 85vh;
+    div.introduction_heading{
+        position: relative;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        h3{
+            width: 100%;
+            height: 10%;
+            margin: 0;
+            padding-top: 10vw;
+            text-align: center;
+            color: white;
+            font-family: 'GothamPro';
+            font-weight: 400;
+            font-size: 2.3rem;
+            z-index: 1;
+            padding-bottom: 10%;
+        }
+        div.background_W{
+            position: absolute;
+            color: white;
+            font-size: 16rem;
+            font-family: 'GothamPro';
+            font-weight: 700;
+            padding-top: 2vw;
+            opacity: 0.3;
+            transform: scale(0.70, 1.0);
+        }
+    }
+
+    @mixin introductionFeature() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 17%;
+        font-family: 'GothamPro';
+        font-weight: 200;
+        color: white;
+        padding: 0 1% 0 1%;
+        margin-bottom: 10%;
+        div.feature_img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $lightBlue;
+            border-radius: 100%;
+            width: 8vw;
+            height: 8vw;
+        }
+        h5{
+            font-size: 1.1rem;
+            font-weight: inherit;
+            margin: 5% 0 10% 0;
+        }
+        p{
+            font-size: 0.9rem;
+            font-weight: 100;
+            line-height: 1.2rem;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    
+    div.mainIntroduction_feature1{
+        @include introductionFeature();
+        padding-left: 0;
+    }
+    div.mainIntroduction_feature2{
+        @include introductionFeature();
+    }
+    div.mainIntroduction_feature3{
+        @include introductionFeature();
+    }
+    div.mainIntroduction_feature4{
+        @include introductionFeature();
+        padding-right: 0;
+    }
+}

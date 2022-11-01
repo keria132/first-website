@@ -1,0 +1,32 @@
+
+
+section.asideBlock{
+    display: flex;
+    background-color: #11749e;
+    align-items: center;
+    justify-content: center;
+    font-family: 'GothamPro';
+    color: white;
+    height: 40vh;
+    div{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 40vw;
+        margin: 0 2% 0 2%;
+        
+        img{
+            width: 11.5%;
+            padding-top: 1%;
+            
+        }
+        p{
+            width: 80%;
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 100;
+            line-height: 1.7rem;
+        }
+    }
+}

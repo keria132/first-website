@@ -1,0 +1,55 @@
+
+
+section.responsiveBlock{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-image: url("../img/bodyImage.png");
+    background-size: 190vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    div.description{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        color: white;
+        align-items: flex-start;
+        margin: 10% 10% 0 10%;
+        
+        h3{
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 100;
+            line-height: 1.7rem;
+        }
+        p.description{
+            margin-bottom: 15%;
+        }
+        p.feature{
+            padding: 1.5% 0% 1.5% 2%;
+            background-color: #11749e;
+            font-weight: 400;
+        }
+        p:nth-child(3){
+            padding-right: 30%;
+        }
+        p:nth-child(4){
+            padding-right: 48%;
+        }
+        p:nth-child(5){
+            padding-right: 35%;
+        }
+        
+    }
+
+    img{
+        width: 25vw;
+        align-self: center;
+        margin-left: 6%;
+        // margin: 7% 0 5% 6%;
+    }
+}

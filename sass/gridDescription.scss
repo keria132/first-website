@@ -1,0 +1,59 @@
+// $gridPicture_1: url("../img/Photo1.png");
+// $gridPicture_2: url("../img/Photo2.png");
+
+section.gridDescription{
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "upper-text upper-img"
+        "bottom-img bottom-text";
+    // justify-items: center; Horizontal row align
+    // align-items: center; Vertical column align
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #222222;
+        font-family: 'GothamPro';
+        color: white;
+        padding-left: 20%;
+        aside{
+            font-size: 0.8rem;
+            font-weight: 100;
+        }
+        h3{
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-top: 2%;
+        }
+        p{
+            padding: 0 25% 0 0;
+            font-weight: 200;
+            line-height: 1.5rem;
+            margin: 0;
+        }
+    }
+    div.firstDescription{
+        grid-area: upper-text;
+    }
+
+    img.secondPhoto{
+        grid-area: bottom-img;
+        width: 100%;
+    }
+
+    img.firstPhoto{
+        grid-area: upper-img;
+        width: 100%;
+    }
+
+    div.secondDescription{
+        grid-area: bottom-text;
+        background-color: #f3f3f3;
+        color: #222222;
+    }
+
+
+}
